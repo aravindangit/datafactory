@@ -1,0 +1,89 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "input"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"Country": {
+					"type": "string"
+				},
+				"Currency": {
+					"type": "string"
+				},
+				"Name": {
+					"type": "string"
+				},
+				"Region": {
+					"type": "string"
+				},
+				"Population": {
+					"type": "integer"
+				},
+				"Area (sq. mi.)": {
+					"type": "integer"
+				},
+				"Pop. Density (per sq. mi.)": {
+					"type": "number"
+				},
+				"Coastline (coast per area ratio)": {
+					"type": "number"
+				},
+				"Net migration": {
+					"type": "number"
+				},
+				"Infant mortality (per 1000 births)": {
+					"type": "number"
+				},
+				"GDP ($ per capita)": {
+					"type": "integer"
+				},
+				"Literacy (%)": {
+					"type": "number"
+				},
+				"Phones (per 1000)": {
+					"type": "number"
+				},
+				"Arable (%)": {
+					"type": "number"
+				},
+				"Crops (%)": {
+					"type": "number"
+				},
+				"Other (%)": {
+					"type": "number"
+				},
+				"Climate": {
+					"type": "integer"
+				},
+				"Birthrate": {
+					"type": "number"
+				},
+				"Deathrate": {
+					"type": "number"
+				},
+				"Agriculture": {
+					"type": "number"
+				},
+				"Industry": {
+					"type": "number"
+				},
+				"Service": {
+					"type": "number"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
